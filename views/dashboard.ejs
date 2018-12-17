@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <style media="screen">
+      .page-content{
+        margin-left:0px !important ;
+      }
+      .page-header .header-title h1{
+        font-size: 40px !important ;
+
+      }
+      .page-header .header-title h1 small{
+        font-size: 40px !important ;
+      }
+    </style>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link id="bootstrap-rtl-link" href="" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/weather-icons.min.css" rel="stylesheet" />
+
+    <!--Fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300" rel="stylesheet" type="text/css">
+
+    <!--Beyond styles-->
+    <link id="beyond-link" href="assets/css/beyond.min.css" rel="stylesheet" />
+    <link href="assets/css/demo.min.css" rel="stylesheet" />
+    <link href="assets/css/typicons.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
+    <link id="skin-link" href="" rel="stylesheet" type="text/css" />
+<script src="assets/js/skins.min.js"></script>
+  </head>
+  <body>
+
+
+<div class="main-container container-fluid">
+
+  <div class="page-container">
+
+    <div class="page-content">
+
+        <!-- Page Header -->
+        <div class="page-header position-relative">
+            <div class="header-title">
+                <h1>
+                    Latency Dashboard for user :
+                    <small>
+                        <i class="fa fa-angle-right"></i>
+                        <%= user.username %>
+                    </small>
+                </h1>
+            </div>
+            <!--Header Buttons-->
+
+            <!--Header Buttons End-->
+        </div>
+        <!-- /Page Header -->
+        <!-- Page Body -->
+        <div class="page-body">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="row">
+
+                        <div class="col-xs-12 col-md-12">
+                            <div class="widget">
+                                <div class="widget-header">
+                                    <span class="widget-caption">Line Chart</span>
+
+                                    <div class="widget-buttons">
+                                        <a href="#" data-toggle="collapse">
+                                            <i class="fa fa-minus"></i>
+                                        </a>
+                                        <a href="#" data-toggle="dispose">
+                                            <i class="fa fa-times"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="widget-body">
+
+                                    <div class="chartcontainer">
+                                        <canvas id="line" height="300" width="450"></canvas>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="horizontal-space"></div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <div class="widget">
+                                <div class="widget-header">
+                                    <span class="widget-caption">Bar Chart</span>
+
+                                    <div class="widget-buttons">
+                                        <a href="#" data-toggle="collapse">
+                                            <i class="fa fa-minus"></i>
+                                        </a>
+                                        <a href="#" data-toggle="dispose">
+                                            <i class="fa fa-times"></i>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="widget-body">
+
+                                    <div class="chartcontainer">
+                                        <canvas id="bar" height="300" width="450"></canvas>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- /Page Body -->
+    </div>
+
+  </div>
+
+
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!--Beyond Scripts-->
+<script src="assets/js/beyond.min.js"></script>
+
+<!--Page Related Scripts-->
+<script src="assets/js/charts/chartjs/Chart.js"></script>
+<script src="assets/js/charts/chartjs/chartjs-init.js"></script>
+<script>
+    $(window).bind("load", function () {
+
+        /*Sets Themed Colors Based on Themes*/
+        themeprimary = getThemeColorFromCss('themeprimary');
+        themesecondary = getThemeColorFromCss('themesecondary');
+        themethirdcolor = getThemeColorFromCss('themethirdcolor');
+        themefourthcolor = getThemeColorFromCss('themefourthcolor');
+        themefifthcolor = getThemeColorFromCss('themefifthcolor');
+
+        InitiateChartJS.init();
+    });
+</script>
+
+  </body>
+</html>
