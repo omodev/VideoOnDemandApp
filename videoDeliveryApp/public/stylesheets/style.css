@@ -1,0 +1,283 @@
+
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+.jumbotron h1 {
+	color: #353535;
+}
+
+span.icon {
+	margin: 0 5px;
+	color: #D64541;
+}
+
+.mrng-60-top {
+	margin-top: 60px;
+}
+/* Global Button Styles */
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size:14px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	border-radius: 0;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+a.animated-button:link:after, a.animated-button:visited:after {
+	content: "";
+	position: absolute;
+	height: 0%;
+	left: 50%;
+	top: 50%;
+	width: 150%;
+	z-index: -1;
+	-webkit-transition: all 0.75s ease 0s;
+	-moz-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
+}
+a.animated-button:link:hover, a.animated-button:visited:hover {
+	color: #FFF;
+	text-shadow: none;
+}
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+	height: 450%;
+}
+a.animated-button:link, a.animated-button:visited {
+	position: relative;
+	display: block;
+	margin: 30px auto 0;
+	padding: 14px 15px;
+	color: #fff;
+	font-size:14px;
+	border-radius: 0;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	letter-spacing: .08em;
+	text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+a.animated-button.victoria-one {
+	border: 2px solid #D24D57;
+}
+a.animated-button.victoria-one:after {
+	background: #D24D57;
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+a.animated-button.victoria-two {
+	border: 2px solid #D24D57;
+  width:100px;
+  margin-top:-40px;
+  margin-right:30px;
+}
+a.animated-button.victoria-two.registerBTN{
+  border: 2px solid #D24D57;
+  width:110px;
+  margin-top:-51px;
+  margin-right:150px;
+}
+
+a.animated-button.victoria-two.dashboardBTN{
+  border: 2px solid #D24D57;
+  width:125px;
+  margin-top:-51px;
+  margin-right:150px;
+}
+
+a.animated-button.victoria-two.chatBTN{
+  border: 2px solid #D24D57;
+  width:110px;
+  margin-top:-51px;
+  margin-right:300px;
+}
+a.animated-button.victoria-two:after {
+	background: #D24D57;
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+	transform: translateX(-50%) translateY(-50%) rotate(25deg);
+}
+a.animated-button.victoria-three {
+	border: 2px solid #D24D57;
+}
+a.animated-button.victoria-three:after {
+	background: #D24D57;
+	opacity: .5;
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+a.animated-button.victoria-three:hover:after {
+	height: 140%;
+	opacity: 1;
+}
+a.animated-button.victoria-four {
+	border: 2px solid #D24D57;
+}
+a.animated-button.victoria-four:after {
+	background: #D24D57;
+	opacity: .5;
+	-moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+	-ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+	-webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+	transform: translateY(-50%) translateX(-50%) rotate(90deg);
+}
+a.animated-button.victoria-four:hover:after {
+	opacity: 1;
+	height: 600% !important;
+}
+
+a:link {
+    text-decoration: none;
+  color:#fff ;
+}
+
+a:visited {
+    text-decoration: none;
+  color:#fff ;
+}
+
+a:hover {
+    text-decoration: none;
+    color:#fff ;
+
+}
+
+a:active {
+    text-decoration: none;
+    color:#fff ;
+
+}
+
+#video_player {
+	display: table;
+	line-height: 0;
+	font-size: 0;
+	background: #000;
+}
+#video_player video,
+	#video_player figcaption {
+		display: table-cell;
+		vertical-align: top;
+}
+#video_player figcaption {
+	width: 25%;
+}
+#video_player figcaption a {
+	display: block;
+	opacity: .5;
+	transition: 1s opacity;
+}
+#video_player figcaption a img,
+	figure video {
+		width: 100%;
+		height: auto;
+}
+#video_player figcaption a:hover {
+	opacity: 1;
+}
+
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(https://fonts.googleapis.com/css?family=Courgette|Oswald);
+
+a[class*="entypo-"]:before {
+	font-family: 'entypo', sans-serif;
+}
+
+
+body {
+  height: 1500px;
+  background: url(https://www.brainpickings.org/wp-content/themes/brainpickings/images/bckgd_body.png);
+}
+
+.offset {
+  margin-top: 0;
+  padding-top: 270px;
+  text-align: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 120px;
+  font-weight: bold;
+  text-align: center;
+  background: #1C1C1C;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+
+.header.small {
+  height: 50px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.header.small ~ .offset {
+  padding-top: 140px;
+}
+.header.small .header_logo {
+
+  font-size: 30px;
+ text-shadow: 3px 4px rgba(10, 10, 10, 0.4);
+
+  margin-top:11px;
+}
+
+.header_logo {
+  font-family: 'Oswald', sans-serif;
+  font-size: 50px;
+  text-shadow: 3px 4px rgba(10, 10, 10, 0.4);
+  -webkit-transition: .3s;
+  transition: .3s;
+  color:#fff ;
+  margin-left:-1070px ;
+}
+@charset "utf-8";
+
+
+.header_register{
+font-family: 'Oswald', sans-serif;
+
+
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
